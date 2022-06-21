@@ -1,4 +1,4 @@
 if 1:
     print("Valid")
 else:
-    rpint("not one")
+    print("not one")
