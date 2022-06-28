@@ -77,6 +77,7 @@
 # print(rev_s)    #emoclew
 
 #Method 2
-s="welcome"
-rev_s=s[::-1]
-print(rev_s)    #emoclew
+# s="welcome"
+# rev_s=s[::-1]
+# print(rev_s)    #emoclew
+
