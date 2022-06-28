@@ -22,13 +22,39 @@
 
 ### Example 3 ########
 
-i,j = 15,25         #Global Variables
-class MyClass:
-    a,b = 10,20     #Class Variables
-    def add(self,x,y):      #Local Variables
-        print(x+y)
-        print(self.a+self.b)
-        print(i+j)
+# i,j = 15,25         #Global Variables
+# class MyClass:
+#     a,b = 10,20     #Class Variables
+#     def add(self,x,y):      #Local Variables
+#         print(x+y)
+#         print(self.a+self.b)
+#         print(i+j)
+#
+# mc=MyClass()
+# mc.add(100,200)
 
+### Example 4 ########
+
+# a,b = 15,25         #Global Variables
+# class MyClass:
+#     a,b = 10,20     #Class Variables
+#     def add(self,x,y):      #Local Variables
+#         print(a+b)
+#         print(self.a+self.b)
+#         print(globals()['a']+globals()['b'])
+#
+# mc=MyClass()
+# mc.add(100,200)
+
+#### Example 5 ############
+
+class MyClass:
+    def __init__(self):
+        print("this is constructor")
+
+    def m1(self):
+        print("hello...")
+
+MyClass()
 mc=MyClass()
-mc.add(100,200)
+mc.m1()
