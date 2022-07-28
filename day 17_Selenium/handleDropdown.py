@@ -19,7 +19,7 @@ drpcountry = Select(drpcountry_element)
 
 # capture all the options and print them
 alloptions = drpcountry.options
-# print("Total Number of options: ",len(alloptions))
+print("Total Number of options: ",len(alloptions))
 
 # for opt in alloptions:
 #     print(opt.text)
@@ -29,3 +29,7 @@ for opt in alloptions:
     if opt.text=="Bangladesh":
         opt.click()
         break
+
+
+# alloptions = driver.find_elements(By.XPATH,"//*[@id='input-country']/option")   #if we want to do same thing without select tag
+# print(len(alloptions))
