@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-ops = webdriver.ChromeOptions()
+ops = webdriver.ChromeOptions() ## variable to disable notification popup
 ops.add_argument("--disable-notifications")
 
 serv_obj = Service("C:\Drivers\chromedriver_win32\chromedriver.exe")
