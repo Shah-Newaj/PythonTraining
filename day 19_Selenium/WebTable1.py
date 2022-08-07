@@ -34,7 +34,8 @@ for r in range(2,noOfRows+1):
     authorName = driver.find_element(By.XPATH,"//table[@name='BookTable']/tbody/tr["+str(r)+"]/td[2]").text
     if authorName=="Mukesh":
         bookName = driver.find_element(By.XPATH,"//table[@name='BookTable']/tbody/tr["+str(r)+"]/td[1]").text
-        print(bookName,"  ",authorName)
+        price = driver.find_element(By.XPATH, "//table[@name='BookTable']/tbody/tr[" + str(r) + "]/td[4]").text
+        print(bookName,"    ",authorName,"    ",price)
 
 
 driver.close()
