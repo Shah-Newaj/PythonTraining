@@ -12,6 +12,6 @@ driver.get("https://demo.nopcommerce.com/")
 driver.maximize_window()
 
 # driver.save_screenshot("C:\\Users\\Server\\PycharmProjects\\PythonTraining\\day 23_Selenium\\home.png")
-# driver.save_screenshot(os.getcwd()+"homepage.png")
+driver.save_screenshot(os.getcwd()+"\\homepage.png")
 
 driver.quit()
