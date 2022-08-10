@@ -5,6 +5,7 @@ from selenium.webdriver.support.select import Select
 
 serv_obj = Service("C:\Drivers\chromedriver_win32\chromedriver.exe")
 driver = webdriver.Chrome(service=serv_obj)
+driver.implicitly_wait(10)
 
 driver.get("https://www.dummyticket.com/dummy-ticket-for-visa-application/")
 driver.maximize_window()
