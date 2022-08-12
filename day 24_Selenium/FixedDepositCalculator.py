@@ -12,7 +12,7 @@ driver.implicitly_wait(10)
 driver.get("https://www.moneycontrol.com/fixed-income/calculator/state-bank-of-india-sbi/fixed-deposit-calculator-SBI-BSB001.html")
 driver.maximize_window()
 
-file = "C:\Selenium Practice\caldata.xlsx"
+file = "C:\Selenium Practice\caldata.xlsx"  #Excel File Location
 
 rows = XLUtils.getRowCount(file,"Sheet1")
 
